@@ -17,6 +17,8 @@ OpenCL: Compilation differs based on platform. Due to time/testing constraints a
 'gcc main.c -lopencl -o weno.out' (on Windows/Cygwin or Linux)
 'gcc main.c -framework OpenCL -o weno.out' (On MacOS)
 
+NOTE: You may want to define CL_SILENCE_DEPRECATION on MacOS to silence the large number of deprecation warnings. This can be done using '-Wno-depricated-declarations'
+
 Note that this assumes that OpenCL libraries are installed and available in a standard location.
 
 Once compiled the program can be run using './weno.out'. It will produce an output file 'cloutput.dat'. The python script 'python ./plot.py' will plot the result versus the solution to Sod's problem.

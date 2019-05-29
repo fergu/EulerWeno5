@@ -22,6 +22,8 @@ typedef cl_double8 doubleVector;
 #define E s2
 // Component 3 (s3): rhoY1
 #define rhoY1 s3
+// Component 4 (s4): rhoY2
+#define rhoY2 s4
 
 int main(void) {
 	printf("Accelerated Euler Equation solver.\n");
